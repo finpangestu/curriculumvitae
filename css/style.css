@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3efe5;
+}
+
+body p {
+    color: #464740;
+}
+
+header {
+    display: inline;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #ffb304;
+    text-align: center;
+    color: #464740;
+}
+
+nav {
+    background-color: #464740;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #ffb304;
+}
+
+nav a:hover {
+    font-weight: bold;
+    color: #e9e0cc;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 25px;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+h2 {
+    color: #ffb304;
+}
+
+h3, h4 {
+    color: #464740;
+}
+
+.container {
+    width: 100%;
+	margin: auto;
+}
+
+.container img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: scale-down;
+    object-position: center;
+}
+
+.slider-wrapper {
+	width: 100%;
+	height: 300px;
+    position: relative;
+}
+ 
+.slide {
+	float: left;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 3s linear;
+}
+ 
+.slider-wrapper > .slide:first-child {
+	opacity: 1;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;
+}
+
+.portofolio {
+    text-align: center;
+}
+
+.portofolio img {
+    width: 300px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 #464740;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f8f7f5;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: scale-down;
+    object-position: center;
+}
+
+th {
+    text-align: left;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+footer {
+    padding: 20px;
+    color: #ffb304;
+    background-color: #464740;
+    text-align: center;
+    font-weight: bold;
+}
